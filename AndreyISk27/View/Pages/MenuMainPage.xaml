@@ -1,0 +1,27 @@
+﻿<Page x:Class="AndreyISk27.View.Pages.MenuMainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AndreyISk27.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="675" d:DesignWidth="280"
+      Title="MenuMainPage">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 75 0 0">
+            <TextBlock FontSize="25" Margin="0 10 0 10">
+                <Hyperlink Foreground="Black" Click="NewsBtn_Click" Name="NewsBtn" TextDecorations="None" >Новости</Hyperlink>
+            </TextBlock>
+            <TextBlock FontSize="25" Margin="0 10 0 10">
+    <Hyperlink Foreground="Black" Click="AfishaBtn_Click" Name="AfishaBtn" TextDecorations="None" >Афиша</Hyperlink>
+            </TextBlock>
+            <TextBlock FontSize="25" Margin="0 10 0 10">
+    <Hyperlink Foreground="Black" Click="ProposalBtn_Click" Name="ProposalBtn" TextDecorations="None" >Предложения</Hyperlink>
+            </TextBlock>
+            <TextBlock FontSize="25" Margin="0 10 0 10">
+    <Hyperlink Foreground="Black" Click="ClaimsBtn_Click" Name="ClaimsBtn" TextDecorations="None" >Жалобы</Hyperlink>
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</Page>

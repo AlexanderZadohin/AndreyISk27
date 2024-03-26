@@ -1,0 +1,33 @@
+﻿<Page x:Class="AndreyISk27.View.Pages.AfishaMainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AndreyISk27.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="560" d:DesignWidth="1306"
+      Title="AfishaMainPage">
+
+    <Grid>
+        <ListBox BorderThickness="0" SelectionChanged="MainAfishaLb_SelectionChanged" x:Name="MainAfishaLb" Width="1200" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Hidden" Background="{x:Null}" d:ItemsSource="{d:SampleData ItemCount=100}">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Width="1200" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <Border BorderBrush="Black" Width="1150" Height="350" BorderThickness="1" CornerRadius="10" Margin="20">
+                            <StackPanel Margin="10">
+                                <TextBlock Text="{Binding Name}"/>
+                                <TextBlock Text="{Binding Text}"/>
+                                <TextBlock Text="{Binding Date, StringFormat=dd.MM.yyyy }"/>
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Page>
